@@ -18,13 +18,11 @@ Hardware
 ---
 Wiring
 ---
-Arduino Pin  6 --- Resistor 220 ohms --- Left LED lead
-
-Arduino 5V     --- Second left LED lead (longer lead)
-
-Arduino Pin  9 --- Resistor 220 ohms --- Second right LED lead
-
-Arduino Pin 10 --- Resistor 220 ohms --- Right LED lead
+LED Pin (Left → Right)	LED Function	Arduino Connection
+Left pin	Red cathode	Pin 6 → 220 Ω resistor → LED pin
+Second left (long)	Common anode	+5V
+Second right	Green cathode	Pin 9 → 220 Ω resistor → LED pin
+Right pin	Blue cathode	Pin 10 → 220 Ω resistor → LED pin
 
 Wiring image reference: 
 https://github.com/kingston-hackSpace/RGB_LED/blob/main/RGB_LED_bb.jpg 
