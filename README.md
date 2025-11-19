@@ -18,13 +18,26 @@ Hardware
 ---
 Wiring
 ---
-LED Pin (Left → Right)	LED Function	Arduino Connection
-Left pin	Red cathode	Pin 6 → 220 Ω resistor → LED pin
-Second left (long)	Common anode	+5V
-Second right	Green cathode	Pin 9 → 220 Ω resistor → LED pin
-Right pin	Blue cathode	Pin 10 → 220 Ω resistor → LED pin
+| LED Pin (Left → Right) | LED Function     | Arduino Connection                    |
+| ---------------------- | ---------------- | ------------------------------------- |
+| **Left pin**           | Red cathode      | **Pin 6 → 220 Ω resistor → LED pin**  |
+| **Second left (long)** | **Common anode** | **+5V**                               |
+| **Second right**       | Green cathode    | **Pin 9 → 220 Ω resistor → LED pin**  |
+| **Right pin**          | Blue cathode     | **Pin 10 → 220 Ω resistor → LED pin** |
+
 
 Wiring image reference: 
 https://github.com/kingston-hackSpace/RGB_LED/blob/main/RGB_LED_bb.jpg 
+
+---
+Code
+---
+Important Note
+
+This LED is common-anode, so the logic is inverted:
+
+analogWrite(pin, 0) → colour fully ON
+
+analogWrite(pin, 255) → colour OFF
 
 
