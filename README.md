@@ -32,12 +32,20 @@ https://github.com/kingston-hackSpace/RGB_LED/blob/main/RGB_LED_bb.jpg
 ---
 Code
 ---
-Important Note
+*** Important Note! ***
 
 This LED is common-anode, so the logic is inverted:
 
 analogWrite(pin, 0) → colour fully ON
 
 analogWrite(pin, 255) → colour OFF
+
+So a colour value of (R=255, G=0, B=255) means:
+
+Red off
+
+Green on
+
+Blue off
 
 
